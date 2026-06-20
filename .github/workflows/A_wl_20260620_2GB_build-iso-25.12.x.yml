@@ -41,7 +41,7 @@ on:
         type: choice
         options:
           - 'yes'
-          - 'no'``
+          - 'no'
       pppoe_account:
         description: "宽带账号 (若启用PPPoE)"
         required: false
