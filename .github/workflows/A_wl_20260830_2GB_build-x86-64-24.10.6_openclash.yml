@@ -1,4 +1,4 @@
-name: A_wl_20260830_2GB_build-x86-64-24.10.6
+name: A_wl_20260830_2GB_build-x86-64-24.10.6_openclash
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ on:
         description: '选择软件包空间大小'
         required: true
         type: choice
-        default: '1G'
+        default: '2G'
         options:
           - '1G'
           - '2G'
@@ -39,7 +39,7 @@ on:
         description: |
           是否编译 Docker 插件
         required: true
-        default: 'yes'
+        default: 'no'
         type: choice
         options:
           - 'yes'
@@ -158,7 +158,7 @@ jobs:
       - name: Upload ImmortWrt as release assets
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: A_wl_20260830_2GB_build-x86-64-24.10.6
+          tag_name: A_wl_20260830_2GB_build-x86-64-24.10.6_openclash
           body_path: ${{ github.workspace }}/router-info.md
           files: |
             ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz
