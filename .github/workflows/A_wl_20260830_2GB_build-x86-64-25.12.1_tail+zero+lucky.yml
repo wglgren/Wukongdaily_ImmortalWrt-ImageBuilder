@@ -1,4 +1,4 @@
-name: A_wl_20260830_2GB_build-x86-64-25.12.1_tail+zero
+name: A_wl_20260830_2GB_build-x86-64-25.12.1_tail+zero+lucky
 on:
   workflow_dispatch:
     inputs:
@@ -152,7 +152,7 @@ jobs:
       - name: Upload ImmortWrt as release assets
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: A_wl_20260830_2GB_build-x86-64-25.12.1_tail+zero
+          tag_name: A_wl_20260830_2GB_build-x86-64-25.12.1_tail+zero+lucky
           body_path: ${{ github.workspace }}/router-info.md
           files: |
             ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz
