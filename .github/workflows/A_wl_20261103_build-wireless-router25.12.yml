@@ -671,7 +671,7 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ github.event.inputs.profile }}
-          name: ImmortalWrt-Wireless
+          name: A_wl_20261103_build-wireless-router25.12
           body_path: ${{ github.workspace }}/mediatek-filogic/info.md
           files: |
             ${{ github.workspace }}/bin/targets/${{ env.platform }}/*
