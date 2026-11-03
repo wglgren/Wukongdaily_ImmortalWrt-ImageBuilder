@@ -16,7 +16,7 @@
 # xiaomi_redmi-router-ax6000-ubootmod—————改装过 bootloader 的版本（ubootmod）
 
 
-name: A_wl_20261103_build-wireless-router25.12
+name: A_wl_20261103_build-wireless-router25.12_phicomm_k3
 
 on:
   workflow_dispatch:
@@ -670,8 +670,8 @@ jobs:
       - name: Upload ImmortalWrt as release assets
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: A_wl_20261103_build-wireless-router25.12
-          name: A_wl_20261103_build-wireless-router25.12
+          tag_name: A_wl_20261103_build-wireless-router25.12_phicomm_k3
+          name: A_wl_20261103_build-wireless-router25.12_phicomm_k3
           body_path: ${{ github.workspace }}/mediatek-filogic/info.md
           files: |
             ${{ github.workspace }}/bin/targets/${{ env.platform }}/*
