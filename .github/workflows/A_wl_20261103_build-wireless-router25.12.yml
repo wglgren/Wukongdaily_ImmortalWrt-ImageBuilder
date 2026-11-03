@@ -670,7 +670,7 @@ jobs:
       - name: Upload ImmortalWrt as release assets
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: ${{ github.event.inputs.profile }} A_wl_20261103_build-wireless-router25.12
+          tag_name: ${{ github.event.inputs.profile }}
           name: ImmortalWrt-Wireless
           body_path: ${{ github.workspace }}/mediatek-filogic/info.md
           files: |
